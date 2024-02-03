@@ -35,6 +35,27 @@ const Hero = () => {
   return (
     <div className='h-[110vh] bg-[#f0eada]'>
         <div className='mt-[16vh] flex justify-between w-[95%] mx-auto'>
+
+
+            <div className='absolute top-[50rem] bg-white  h-[5rem] w-[100%] right-[2.5rem] flex items-center border-black border-[0.2rem]'>
+                <ul className={`flex space-x-[3rem] animate-marquee overflow-hidden whitespace-nowrap ${bungee.className}  items-center  text-[37px] text-[#48292d] font-bold`}>
+                    <li>Lamb</li>
+                    <li>Greens</li>
+                    <li>Naan</li>
+                    <li>Papadum</li>
+                    <li>Kheer</li>
+                    <li>Lentils</li>
+                    <li>Rice</li>
+                    <li>Beans</li>
+                </ul>
+            </div>
+
+                
+
+
+               
+
+        
             <div className='flex flex-col mt-[15vh] w-[50%]'>
                 <p className = {`${bungee.className} text-red-500 text-[80px] mb-[1.2rem] w-[65%] leading-[5.2rem]`}>
                 food,
@@ -103,7 +124,11 @@ const Hero = () => {
                         <div className={` ${currentContent == 2 ? 'bg-[#000000]' : 'bg-[#222222] opacity-40' } absolute top-[18.5rem] right-[10.8rem] h-[1rem] w-[1rem] rounded-full`}></div>
                         <div className={` ${currentContent == 3 ? 'bg-[#000000]' : 'bg-[#222222] opacity-40' } absolute top-[18.5rem] right-[8.8rem] h-[1rem] w-[1rem] rounded-full`}></div>
                     </div>
+
+                    
                 </div>
+
+                
             </div>
 
         </div>
