@@ -37,7 +37,7 @@ const Hero = () => {
         <div className='mt-[16vh] flex justify-between w-[95%] mx-auto'>
 
 
-            <div className='absolute top-[50rem] bg-white  h-[5rem] w-[100%] right-[2.5rem] flex items-center border-black border-[0.2rem]'>
+            <div className='absolute top-[50rem] bg-white  h-[5rem] w-[100%] right-[2.5rem] flex items-center border-black border-[0.2rem] z-0'>
                 <ul className={`flex space-x-[3rem] animate-marquee overflow-hidden whitespace-nowrap ${bungee.className}  items-center  text-[37px] text-[#48292d] font-bold`}>
                     <li>Lamb</li>
                     <li>Greens</li>
@@ -50,12 +50,7 @@ const Hero = () => {
                 </ul>
             </div>
 
-                
 
-
-               
-
-        
             <div className='flex flex-col mt-[15vh] w-[50%]'>
                 <p className = {`${bungee.className} text-red-500 text-[80px] mb-[1.2rem] w-[65%] leading-[5.2rem]`}>
                 food,
@@ -89,7 +84,7 @@ const Hero = () => {
                                                         
                             }
                             {currentContent === 2 && 
-                            <div>
+                            <div className='z-50'>
                             <div className='flex flex-col'>
                                 <p className={`${bungee.className} text-[#48292d] text-[40px] mb-[1rem]`}>Chicken Tikka Masala</p>
                                 <p className={`leading-[1.5rem] ${inter.className} text-[#333333] text-[18px]`}>Tandoor grilled chicken marinated with yogurt and spices and simmered in a robust creamy sauce of tomatoes and cream.</p>
